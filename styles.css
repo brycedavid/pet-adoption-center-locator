@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-image: url("../images/pawprints.jpg");
+  background-image: url("./images/pawprints.jpg");
   background-position: 50% 50%;
   background-repeat: repeat;
   font-family: "helvetica";
