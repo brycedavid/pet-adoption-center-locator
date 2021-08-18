@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Adoption Centers</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="navbar-container">
+      <div class="subnav">
+        <a class="subnav-button" href="./home.html" id="home-link">Home</a>
+      </div>
+      <div class="subnav">
+        <a class="subnav-button" href="./adopt.html">Adopt</a>
+      </div>
+      <div class="subnav">
+        <a class="subnav-button" href="./about.html">About</a>
+        <div class="navbar-about-container"></div>
+      </div>
+      <div class="subnav">
+        <a class="subnav-button" href="./donate.html">Donate</a>
+      </div>
+      <div class="subnav active" id="subnav-search">
+        <a class="subnav-button" id="search-link">Search</a>
+        <div
+          id="navbar-search-container"
+          style="visibility: hidden"
+          onmouseover="setSearchVisible(), setSearchActive()"
+          onmouseleave="setSearchInvisible(), setSearchInactive()"
+        >
+          <div class="search" id="navbar-search">
+            <input
+              name="navbar-search-input"
+              type="search"
+              placeholder="Search"
+            />
+            <button type="submit">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/480px-Magnifying_glass_icon.svg.png"
+                alt="Magnifying_glass_icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="body-content">
+      <br />
+      <br />
+      <h1>Displaying results for:</h1>
+      <br />
+      <p id="search-result"></p>
+      <br />
+      <p>--Display Results Here--</p>
+      <br />
+      <div id="search-container">
+        <p>
+          Didn't find what you were looking for? Try searching using a different
+          keyword:
+        </p>
+        <form
+          id="search-main"
+          class="search"
+          action="./search.html"
+          method="GET"
+        >
+          <input type="search" placeholder="Search" name="search" />
+          <button type="submit">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/480px-Magnifying_glass_icon.svg.png"
+              alt="Magnifying_glass_icon"
+            />
+          </button>
+        </form>
+      </div>
+      <br /><br /><br /><br />
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

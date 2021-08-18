@@ -1,0 +1,186 @@
+/* Body/Main */
+
+body {
+  margin: 0;
+  background-image: url("../images/pawprints.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  font-family: "helvetica";
+}
+
+#body-content {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 0;
+  background-color: white;
+  border-left: black solid 2px;
+  border-right: black solid 2px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  margin-top: 0;
+  z-index: 800;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+#welcome-text {
+  text-align: center;
+  padding-top: 30px;
+  margin-right: 800px;
+  margin-bottom: -12px;
+  font-size: 28px;
+  color: #8c1c13;
+  font-family: "Lucida Handwriting";
+  font-style: italic;
+  transform: rotate(-8deg);
+}
+
+h2 {
+  font-size: 23px;
+  margin-top: -20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 380;
+}
+
+/* Navbar */
+
+#navbar-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #8c1c13;
+  overflow: hidden;
+  padding: 0;
+}
+
+#navbar-search-container {
+  display: flex;
+  border-top: black 1px solid;
+  position: absolute;
+  left: 0;
+  background-color: #8c1c13;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-content: center;
+  z-index: 900;
+}
+
+#navbar-search {
+  height: 26px;
+  width: 500px;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+#navbar-search > input {
+  width: 500px;
+}
+
+.subnav-button {
+  text-align: center;
+  text-decoration: none;
+  color: #6fffe9;
+  font-size: 17px;
+  line-height: 50px;
+  padding: 100px;
+  margin: 0;
+}
+
+.subnav > a:hover {
+  background-color: #bf4342;
+  transition: 0.5s ease-in-out;
+}
+
+div.active {
+  background-color: #bf4342;
+}
+
+/* Search */
+
+.search {
+  display: flex;
+  margin-right: 10px;
+  border: white 2px solid;
+  border-radius: 12px;
+  background-color: white;
+}
+
+#search-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  width: 600px;
+  border: lightgray solid 4px;
+}
+
+.search > input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.search > input:focus {
+  outline: none;
+}
+
+.search > button {
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.search > button:hover {
+  background-color: lightgrey;
+  transition: 0.38s ease-in;
+}
+
+.search > button:active {
+  background-color: darkgrey;
+}
+
+.search > button > img {
+  width: 1.1em;
+  margin: 2px;
+}
+
+#search-main {
+  border: solid black 3px;
+}
+
+/* Images */
+
+#image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#image-container > img {
+  width: 800px;
+  border-radius: 20px;
+  border: lightgray solid 4px;
+}
+
+@media (max-width: 768px) {
+}
