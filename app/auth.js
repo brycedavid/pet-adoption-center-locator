@@ -1,4 +1,4 @@
-import { Client } from "@petfinder/petfinder-js";
+import { Client } from "../node_modules/petfinder-js";
 let client = new Client({
   apiKey: "YeI5i5zLHnqvUoBxfJcjseCpBDQcZSS6ecZKJouXs07aejuKfK",
   secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
