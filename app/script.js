@@ -32,3 +32,11 @@ if (document.querySelector("#search-result")) {
   const result = document.querySelector("#search-result");
   result.innerHTML = param;
 }
+
+var petfinder = require("@petfinder/petfinder-js");
+var client = new petfinder.Client({
+  apiKey: "YeI5i5zLHnqvUoBxfJcjseCpBDQcZSS6ecZKJouXs07aejuKfK",
+  secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
+});
+
+client.animal.search();
