@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-image: url("../images/pawprints.jpg");
+  background-image: url("./images/pawprints.jpg");
   background-position: 50% 50%;
   background-repeat: repeat;
   font-family: "helvetica";
@@ -60,10 +60,19 @@ p {
 }
 
 #results-display > img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 700px;
+  max-height: 700px;
   align-self: center;
   margin-bottom: 20px;
+  border: 2px solid red;
+  border-radius: 15px;
+}
+
+#results-display > div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: solid red 1px;
+  width: 100%;
 }
 
 /* Navbar */
@@ -71,7 +80,7 @@ p {
 #navbar-container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #8c1c13;
   overflow: hidden;
@@ -82,7 +91,6 @@ p {
   display: flex;
   border-top: black 1px solid;
   position: absolute;
-  /* left: 0; */
   background-color: #8c1c13;
   width: auto;
   height: 60px;
@@ -96,10 +104,6 @@ p {
   justify-content: space-between;
   align-content: center;
 }
-
-/* #navbar-search > input {
-  width: 500px;
-} */
 
 .subnav-button {
   text-align: center;
@@ -133,13 +137,6 @@ p {
 div.active {
   background-color: #bf4342;
 }
-
-/* #animal-select {
-  width: 70px;
-  height: 25px;
-} */
-
-/* Search */
 
 .search {
   display: flex;

@@ -37,13 +37,13 @@ function displayResults(data) {
   const resultDisplay = document.querySelector("#results-display");
   for (let i of data) {
     let element = document.createElement("p");
-    let node = document.createTextNode(i.name);
+    let node = document.createTextNode(toTitleCase(i.name));
     element.appendChild(node);
     resultDisplay.appendChild(element);
 
     if (i.photos.length != 0) {
       element = document.createElement("img");
-      element.setAttribute("src", i.photos[0].small);
+      element.setAttribute("src", i.photos[0].medium);
       resultDisplay.appendChild(element);
     } else {
       element = document.createElement("p");
@@ -51,5 +51,36 @@ function displayResults(data) {
       element.appendChild(node);
       resultDisplay.appendChild(element);
     }
+
+    element = document.createElement("p");
+    node = document.createTextNode("Gender: " + toTitleCase(i.gender));
+    element.appendChild(node);
+    resultDisplay.appendChild(element);
+
+    element = document.createElement("p");
+    node = document.createTextNode("Age: " + toTitleCase(i.age));
+    element.appendChild(node);
+    resultDisplay.appendChild(element);
+
+    element = document.createElement("p");
+    let spayedNeutered = i.attributes.spayed_neutered;
+
+    if (spayedNeutered == true) {
+      node = document.createTextNode("Spayed/Neutered: Yes");
+    } else {
+      node = document.createTextNode("Spayed/Neutered: No");
+    }
+
+    element.appendChild(node);
+    resultDisplay.appendChild(element);
+
+    element = document.createElement("div");
+    resultDisplay.appendChild(element);
   }
+}
+
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
 }
