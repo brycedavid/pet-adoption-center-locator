@@ -1,3 +1,5 @@
+const { result } = require("cypress/types/lodash");
+
 var pf = new petfinder.Client({
   apiKey: "YeI5i5zLHnqvUoBxfJcjseCpBDQcZSS6ecZKJouXs07aejuKfK",
   secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
@@ -23,8 +25,9 @@ function getParameterByName(name, url = window.location.href) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var query = getParameterByName("search");
-var animal = getParameterByName("animal");
+let query = getParameterByName("search");
+let animal = getParameterByName("animal");
+let response;
 
 if (document.querySelector("#search-result")) {
   const result = document.querySelector("#search-result");
@@ -41,6 +44,9 @@ pf.animal
   .then((resp) => {
     if (document.querySelector("#results-display")) {
       const resultDisplay = document.querySelector("results-display");
-      console.log(resp);
+      response = JSON.parse(resp);
+      console.log(response);
+
+      resultDisplay.innerHTML = response.data.animals[0].name;
     }
   });
