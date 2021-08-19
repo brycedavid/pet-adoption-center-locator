@@ -41,6 +41,6 @@ pf.animal
   .then((resp) => {
     if (document.querySelector("#results-display")) {
       const resultDisplay = document.querySelector("results-display");
-      resultDisplay.innerHTML = resp;
+      console.log(resp);
     }
   });
