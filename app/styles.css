@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-image: url("./images/pawprints.jpg");
+  background-image: url("../images/pawprints.jpg");
   background-position: 50% 50%;
   background-repeat: repeat;
   font-family: "helvetica";
@@ -71,7 +71,7 @@ p {
   left: 0;
   background-color: #8c1c13;
   width: 100%;
-  height: 80px;
+  height: 130px;
   justify-content: center;
   align-content: center;
   z-index: 900;
