@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@petfinder/petfinder-js": "^1.0.6"
+    "@petfinder/petfinder-js": "^1.0.6",
+    "nodemon": "^2.0.12"
   },
   "devDependencies": {
     "express": "^4.17.1"
