@@ -9,7 +9,7 @@ var pf = new petfinder.Client({
   secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
 });
 
-client.animal
+pf.animal
   .search({
     type: "Dog",
     breed: "Bernedoodle",
