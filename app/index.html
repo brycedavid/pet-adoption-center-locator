@@ -14,14 +14,7 @@
         <a class="subnav-button" href="" id="home-link">Home</a>
       </div>
       <div class="subnav">
-        <a class="subnav-button" href="./adopt.html">Adopt</a>
-      </div>
-      <div class="subnav">
-        <a class="subnav-button" href="./about.html">About</a>
-        <div class="navbar-about-container"></div>
-      </div>
-      <div class="subnav">
-        <a class="subnav-button" href="./donate.html">Donate</a>
+        <a class="subnav-button" href="./adopt.html">Adoption Centers</a>
       </div>
       <div class="subnav" id="subnav-search">
         <a
@@ -29,7 +22,7 @@
           id="search-link"
           onmouseenter="setSearchVisible()"
           onmouseleave="setSearchInvisible()"
-          >Search</a
+          >Pets</a
         >
         <div
           id="navbar-search-container"
@@ -42,6 +35,7 @@
             id="navbar-search"
             action="./search.html"
             method="GET"
+            name="search-form"
           >
             <input name="search" type="search" placeholder="Search" />
             <button type="submit">
@@ -50,8 +44,17 @@
                 alt="Magnifying_glass_icon"
               />
             </button>
+            <select name="animal" id="animal-select" class="search">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="rabbit">Rabbit</option>
+            </select>
           </form>
         </div>
+      </div>
+      <div class="subnav">
+        <a class="subnav-button" href="./about.html">About</a>
+        <div class="navbar-about-container"></div>
       </div>
     </nav>
     <div id="body-content">
@@ -101,7 +104,7 @@
     </div>
   </body>
   <script src="./script.js"></script>
-  <script type="module" src="./auth.js"></script>
+  <script type="module" src="./search.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>
 </html>

@@ -109,6 +109,11 @@ div.active {
   background-color: #bf4342;
 }
 
+#animal-select {
+  width: 70px;
+  height: 25px;
+}
+
 /* Search */
 
 .search {
