@@ -34,7 +34,7 @@ if (document.querySelector("#search-result")) {
 pf.animal
   .search({
     type: animal,
-    breed: "all",
+    breed: "",
     page: 1,
     limit: 100,
   })
