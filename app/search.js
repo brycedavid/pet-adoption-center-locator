@@ -34,7 +34,7 @@ if (document.querySelector("#search-result")) {
 pf.animal
   .search({
     type: animal,
-    breed: "",
+    breed: "corgi",
     page: 1,
     limit: 100,
   })
