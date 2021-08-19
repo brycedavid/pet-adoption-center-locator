@@ -42,9 +42,9 @@ pf.animal
   .then((resp) => {
     if (document.querySelector("#results-display")) {
       const resultDisplay = document.querySelector("results-display");
-      response = JSON.parse(resp);
-      console.log(response);
+      // response = JSON.parse(resp);
+      console.log(resp);
 
-      resultDisplay.innerHTML = response.data.animals[0].name;
+      resultDisplay.innerHTML = resp.data.animals[0].name;
     }
   });

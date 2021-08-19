@@ -77,18 +77,18 @@ p {
   z-index: 900;
 }
 
-#navbar-search {
+/* #navbar-search {
   height: 26px;
   width: 500px;
   justify-content: center;
   align-content: center;
   align-self: center;
   justify-self: center;
-}
+} */
 
-#navbar-search > input {
+/* #navbar-search > input {
   width: 500px;
-}
+} */
 
 .subnav-button {
   text-align: center;
@@ -109,10 +109,10 @@ div.active {
   background-color: #bf4342;
 }
 
-#animal-select {
+/* #animal-select {
   width: 70px;
   height: 25px;
-}
+} */
 
 /* Search */
 
