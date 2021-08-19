@@ -1,5 +1,3 @@
-const { result } = require("cypress/types/lodash");
-
 var pf = new petfinder.Client({
   apiKey: "YeI5i5zLHnqvUoBxfJcjseCpBDQcZSS6ecZKJouXs07aejuKfK",
   secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
