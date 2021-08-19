@@ -23,28 +23,24 @@ function getParameterByName(name, url = window.location.href) {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-let query = getParameterByName("search");
+// let query = getParameterByName("search");
 let animal = getParameterByName("animal");
-let response;
 
 if (document.querySelector("#search-result")) {
   const result = document.querySelector("#search-result");
-  result.innerHTML = query + " " + animal;
+  result.innerHTML = animal;
 }
 
 pf.animal
   .search({
     type: animal,
-    breed: "american bulldog",
+    breed: "",
     page: 1,
     limit: 100,
   })
   .then((resp) => {
     if (document.querySelector("#results-display")) {
       const resultDisplay = document.querySelector("results-display");
-      // response = JSON.parse(resp);
-      console.log(resp);
-
-      resultDisplay.innerHTML = resp.data.animals[0].name;
+      console.log(resp.data.animals);
     }
   });
