@@ -24,32 +24,41 @@
           >Pets</a
         >
         <div
+          class="subnav"
           id="navbar-search-container"
           style="visibility: hidden"
           onmouseover="setSearchVisible(), setSearchActive()"
           onmouseleave="setSearchInvisible(), setSearchInactive()"
         >
           <form
-            class="search"
             id="navbar-search"
             action="./search.html"
             method="GET"
             name="search-form"
           >
-            <button name="animal" type="submit" value="dog">Search Dogs</button>
-            <button name="animal" type="submit" value="cat">Search Cats</button>
+            <button
+              class="subnav-button"
+              name="animal"
+              type="submit"
+              value="dog"
+            >
+              Search Dogs
+            </button>
+            <button
+              class="subnav-button"
+              name="animal"
+              type="submit"
+              value="cat"
+            >
+              Search Cats
+            </button>
             <!-- <input name="search" type="search" placeholder="Search" />
             <button type="submit">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/480px-Magnifying_glass_icon.svg.png"
                 alt="Magnifying_glass_icon"
               />
-            </button>
-            <select name="animal" id="animal-select" class="search">
-              <option value="dog">Dog</option>
-              <option value="cat">Cat</option>
-              <option value="rabbit">Rabbit</option>
-            </select> -->
+            </button> -->
           </form>
         </div>
       </div>
