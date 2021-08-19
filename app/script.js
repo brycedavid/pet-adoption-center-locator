@@ -1,5 +1,5 @@
-let petfinder = require("@petfinder/petfinder-js");
-let client = new petfinder.Client({
+import { Client } from "@petfinder/petfinder-js";
+let client = new Client({
   apiKey: "YeI5i5zLHnqvUoBxfJcjseCpBDQcZSS6ecZKJouXs07aejuKfK",
   secret: "WhuKLwumWocRsjzuQYPVSC6ZybxuMdhVCRXYIIW6",
 });
