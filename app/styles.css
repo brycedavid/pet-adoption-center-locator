@@ -2,19 +2,12 @@
 
 body {
   margin: 0;
-  background-image: url("./images/pawprints.jpg");
-  background-position: 50% 50%;
-  background-repeat: repeat;
   font-family: "helvetica";
 }
 
 #body-content {
-  margin-left: 90px;
-  margin-right: 90px;
   margin-top: 0;
   background-color: white;
-  border-left: black solid 2px;
-  border-right: black solid 2px;
 }
 
 h1,
@@ -30,6 +23,15 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  margin-top: 25px;
+}
+
+#home-subheader {
+  font-size: 23px;
+  margin-top: -20px;
+}
+
 #welcome-text {
   text-align: center;
   padding-top: 30px;
@@ -40,11 +42,6 @@ h1 {
   font-family: "Lucida Handwriting";
   font-style: italic;
   transform: rotate(-8deg);
-}
-
-h2 {
-  font-size: 23px;
-  margin-top: -20px;
 }
 
 p {
@@ -80,7 +77,7 @@ p {
 #navbar-container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #8c1c13;
   overflow: hidden;
@@ -88,20 +85,23 @@ p {
 }
 
 #navbar-search-container {
-  display: flex;
+  display: block;
   border-top: black 1px solid;
   position: absolute;
   background-color: #8c1c13;
-  width: auto;
-  height: 60px;
+  width: 315px;
+  height: auto;
   align-content: center;
+  justify-content: center;
   z-index: 900;
 }
 
 #navbar-search {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  justify-content: center;
   align-content: center;
 }
 
@@ -123,10 +123,12 @@ p {
 #navbar-search > button.subnav-button {
   background-color: #8c1c13;
   border: none;
+  width: 100%;
   align-self: center;
-  padding: 15px;
-  line-height: 50px;
-  margin-top: 20px;
+  text-align: center;
+  line-height: 5px;
+  display: block;
+  padding: 23px;
 }
 
 #navbar-search > button.subnav-button:hover {
@@ -154,7 +156,7 @@ div.active {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 250px;
   background-color: white;
   border-radius: 20px;
   width: 600px;
@@ -196,6 +198,18 @@ div.active {
   border: solid black 3px;
 }
 
+#search-container > p {
+  margin-top: 20px;
+}
+
+#search-container > img {
+  margin-top: 40px;
+  width: 40px;
+  height: 40px;
+  border: black 2px solid;
+  border-radius: 50%;
+}
+
 /* Images */
 
 #image-container {
@@ -204,7 +218,8 @@ div.active {
 }
 
 #image-container > img {
-  width: 800px;
+  margin-top: 30px;
+  width: 950px;
   border-radius: 20px;
   border: lightgray solid 4px;
 }

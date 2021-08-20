@@ -13,15 +13,17 @@
         <a class="subnav-button" href="./index.html" id="home-link">Home</a>
       </div>
       <div class="subnav">
-        <a class="subnav-button" href="./adopt.html">Adoption Centers</a>
+        <a class="subnav-button" href="./search-adoption-centers.html"
+          >Adoption Centers</a
+        >
       </div>
-      <div class="subnav" id="subnav-search">
+      <div class="subnav active" id="subnav-search">
         <a
           class="subnav-button"
           id="search-link"
           onmouseenter="setSearchVisible()"
           onmouseleave="setSearchInvisible()"
-          >Pets</a
+          >Adoptable Pets</a
         >
         <div
           class="subnav"
@@ -32,7 +34,7 @@
         >
           <form
             id="navbar-search"
-            action="./search.html"
+            action="./search-pets.html"
             method="GET"
             name="search-form"
           >
@@ -84,7 +86,7 @@
         <form
           id="search-main"
           class="search"
-          action="./search.html"
+          action="./search-pets.html"
           method="GET"
         >
           <input type="search" placeholder="Search" name="search" />
@@ -100,7 +102,7 @@
     </div>
   </body>
   <script src="./script.js"></script>
-  <script type="module" src="./search.js"></script>
+  <script type="module" src="./search-pets.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>
 </html>

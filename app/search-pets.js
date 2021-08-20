@@ -15,8 +15,7 @@ function getParameterByName(name, url = window.location.href) {
 let animal = getParameterByName("animal");
 
 if (document.querySelector("#search-result")) {
-  const result = document.querySelector("#search-result");
-  result.innerHTML = animal;
+  document.querySelector("#search-result").innerHTML = animal;
 }
 
 pf.animal
@@ -27,16 +26,14 @@ pf.animal
     limit: 100,
   })
   .then((resp) => {
-    if (document.querySelector("#results-display")) {
-      console.log(resp.data.animals);
-      displayResults(resp.data.animals);
-    }
+    console.log(resp.data.animals);
+    displayResults(resp.data.animals);
   });
 
 function displayResults(data) {
   const resultDisplay = document.querySelector("#results-display");
   for (let i of data) {
-    let element = document.createElement("p");
+    let element = document.createElement("h2");
     let node = document.createTextNode(toTitleCase(i.name));
     element.appendChild(node);
     resultDisplay.appendChild(element);
