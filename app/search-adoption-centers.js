@@ -14,10 +14,17 @@ pf.organization.search().then((resp) => {
 
 function displayResults(data) {
   const resultDisplay = document.querySelector("#results-display");
+  let link, node;
+
   for (let i of data) {
+    link = document.createElement("a");
+    node = toTitleCase(i.name);
+    link.setAttribute("href", i.url);
+    link.text = node;
+    link.setAttribute("target", "_blank");
+
     let element = document.createElement("h2");
-    let node = document.createTextNode(toTitleCase(i.name));
-    element.appendChild(node);
+    element.appendChild(link);
     resultDisplay.appendChild(element);
 
     if (i.photos.length != 0) {

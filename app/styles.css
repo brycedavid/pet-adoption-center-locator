@@ -6,6 +6,7 @@ body {
 }
 
 #body-content {
+  align-content: center;
   margin-top: 0;
   background-color: white;
 }
@@ -72,6 +73,18 @@ p {
   width: 100%;
 }
 
+#results-display > h2 > a {
+  width: max-content;
+  height: max-content;
+  text-decoration: none;
+}
+
+#search-pets {
+  width: 100%;
+  height: 150px;
+  border: 1px solid red;
+}
+
 /* Navbar */
 
 #navbar-container {
@@ -89,7 +102,7 @@ p {
   border-top: black 1px solid;
   position: absolute;
   background-color: #8c1c13;
-  width: 315px;
+  width: 316px;
   height: auto;
   align-content: center;
   justify-content: center;
@@ -129,6 +142,7 @@ p {
   line-height: 5px;
   display: block;
   padding: 23px;
+  cursor: pointer;
 }
 
 #navbar-search > button.subnav-button:hover {

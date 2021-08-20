@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Adoption Centers</title>
+    <title>Pet Adoption Finder</title>
     <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -12,7 +12,7 @@
       <div class="subnav">
         <a class="subnav-button" href="./index.html" id="home-link">Home</a>
       </div>
-      <div class="subnav active">
+      <div class="subnav">
         <a class="subnav-button" href="./search-adoption-centers.html"
           >Adoption Centers</a
         >
@@ -64,32 +64,25 @@
           </form>
         </div>
       </div>
-      <div class="subnav">
+      <div class="subnav active">
         <a class="subnav-button" href="./about.html">About</a>
         <div class="navbar-about-container"></div>
       </div>
     </nav>
     <div id="body-content">
       <br />
+      <h1>About Us</h1>
       <br />
-      <h1>Displaying results for:</h1>
-      <br />
-      <p id="search-result"></p>
-      <br />
-      <div id="results-display"></div>
       <br />
       <div id="search-container">
-        <p>
-          Didn't find what you were looking for? Try searching using a different
-          keyword:
-        </p>
+        <p>Search for an adoption center near you!</p>
         <form
           id="search-main"
           class="search"
           action="./search.html"
           method="GET"
         >
-          <input type="search" placeholder="Search" name="search" />
+          <input type="search" name="search" placeholder="Search" />
           <button type="submit">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/480px-Magnifying_glass_icon.svg.png"
@@ -97,12 +90,14 @@
             />
           </button>
         </form>
+        <img src="images/paw.png" />
       </div>
       <br /><br /><br /><br />
     </div>
+    <!-- <img src="../images/paw.png" id="paw-icon" alt="paw-icon" /> -->
   </body>
   <script src="./script.js"></script>
-  <script type="module" src="./search-adoption-centers.js"></script>
+  <!-- <script type="module" src="./search.js"></script> -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/@petfinder/petfinder-js/dist/petfinder.min.js"></script>
 </html>

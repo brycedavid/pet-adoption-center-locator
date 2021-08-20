@@ -13,9 +13,12 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 let animal = getParameterByName("animal");
+document.querySelector("#pet-select").value = animal;
 
-if (document.querySelector("#search-result")) {
-  document.querySelector("#search-result").innerHTML = animal;
+if (animal == "dog") {
+  document.querySelector("#search-result").innerHTML = "Adoptable Dogs";
+} else if (animal == "cat") {
+  document.querySelector("#search-result").innerHTML = "Adoptable Cats";
 }
 
 pf.animal
